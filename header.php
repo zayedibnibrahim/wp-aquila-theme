@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme Header
+ * Theme Header main
  * 
  * @package Aquila
  */
