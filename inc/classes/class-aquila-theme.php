@@ -18,6 +18,7 @@
         
         Assets::get_instance();
         Menus::get_instance();
+        Meta_Boxes::get_instance();
 
         $this->set_hooks();
     }
@@ -48,6 +49,8 @@
         add_editor_style();
         add_theme_support('wp-block-style');
         add_theme_support('align-wide');
+
+        add_image_size('featured-thumbnail', 416, 277, true);
     }
 
     

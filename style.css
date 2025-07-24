@@ -18,3 +18,8 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     width: 48px;
     height: auto;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
