@@ -42,6 +42,7 @@ class Meta_Boxes {
         // Nonce
 
         wp_nonce_field(plugin_basename(__FILE__), 'hide_title_meta_box_nonce_name');
+        
         // Nonce end
         ?>
         <label for="aquila_field"><?php esc_html_e('Hide the page title', 'aquila')?></label>
