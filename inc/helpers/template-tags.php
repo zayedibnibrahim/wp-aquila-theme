@@ -74,5 +74,16 @@ function aquila_the_excerpt($trim_character_count = 0){
     $excerpt = substr( $excerpt, 0, $trim_character_count );
     $excerpt = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
 
-    echo $excerpt . '[ ... ]';
+    echo $excerpt . '[...]';
+}
+
+function aquila_excerpt_more() {
+    if( !is_single()){
+        $more = sprintf('<button class="mt-4 btn btn-info"><a class="aquila-read-more text-white" href="%1$s">%2$s</a></button>',
+        get_permalink(get_the_ID()),
+        __('Read more', 'aquila')
+    );
+    }
+
+    return $more;
 }
