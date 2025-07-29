@@ -19,11 +19,12 @@
         Assets::get_instance();
         Menus::get_instance();
         Meta_Boxes::get_instance();
+        Sidebars::get_instance();
 
-        $this->set_hooks();
+        $this->setup_hooks();
     }
 
-    protected function set_hooks() {
+    protected function setup_hooks() {
         add_action('after_setup_theme', [$this, 'setup_theme']);
     }
 

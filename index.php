@@ -27,9 +27,14 @@ get_header();
                         </div>
                     <?php endwhile; ?>
                 </div>
+                <?php else: get_template_part('template-parts/content-none'); ?>
+                <?php endif; ?>
+
+                <?php
+                    aquila_pagination();
+                ?>
             </div>
-        <?php else: get_template_part('template-parts/content-none');
-        endif; ?>
+        
     </div>
 </div>
 

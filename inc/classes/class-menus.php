@@ -15,10 +15,10 @@ class Menus {
     use Singleton;
 
     protected function __construct() {
-        $this->set_hooks();
+        $this->setup_hooks();
     }
 
-    protected function set_hooks() {
+    protected function setup_hooks() {
         add_action( 'init', [$this, 'register_menus'] );
     }
 

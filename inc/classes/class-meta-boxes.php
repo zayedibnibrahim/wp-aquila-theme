@@ -14,10 +14,10 @@ class Meta_Boxes {
     use Singleton;
 
     protected function __construct() {
-        $this->set_hooks();
+        $this->setup_hooks();
     }
 
-    protected function set_hooks() {
+    protected function setup_hooks() {
         add_action('add_meta_boxes', [$this, 'add_custom_meta_box']);
         add_action('save_post', [$this, 'save_post_meta_data']);
     }
